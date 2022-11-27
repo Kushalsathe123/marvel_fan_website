@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clone-A-Thon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    
+</head>
+<body>
+<!-- NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(227, 60, 60);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 20px; font: Bold; color: white; border: 0.5px solid white"><b>MARVEL </b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 15px; font: bold;">
+                <b>Explore</b>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Main page</a></li>
+                <li><a class="dropdown-item" href="#label3">Movies</a></li>
+                <li><a class="dropdown-item" href="#">Comics</a></li>
+                <li><a class="dropdown-item" href="#">TV Series</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">etc</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 15px; font: bold;">
+                <b>Charecters</b>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#label2">Thor</a></li>
+                    <li><a class="dropdown-item" href="#label2">Iron Man</a></li>
+                    <li><a class="dropdown-item" href="#">Captain America</a></li>
+                    <li><a class="dropdown-item" href="#">Venom</a></li>
+                    <li><a class="dropdown-item" href="#">Dr. Strange</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">etc</a></li>
+                    </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 15px; font: bold;">
+                <b>Universe</b>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Main Continuity</a></li>
+                <li><a class="dropdown-item" href="#">Ultimate Marvel</a></li>
+                <li><a class="dropdown-item" href="#">Marvel Noir</a></li>
+                <li><a class="dropdown-item" href="#">Spider-Man: Renew Your Vows</a></li>
+                <li><a class="dropdown-item" href="#">Marvel Adventures</a></li>
+                <li><a class="dropdown-item" href="#">Age Of Apocalypse</a></li>
+
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Other universes</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 15px; font: bold;">
+                <b>Community</b>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Chat</a></li>
+                <li><a class="dropdown-item" href="#">Discuss</a></li>
+                <li><a class="dropdown-item" href="#">Discord</a></li>
+                <li><a class="dropdown-item" href="#">Instagram</a></li>
+                <li><a class="dropdown-item" href="#">Games</a></li>
+
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Etc</a></li>
+                </ul>
+            </li>
+            
+            </ul>
+            <a href="form.html" class="btn btn-primary">Subscribe</a>
+        </div>
+        </div>
+    </nav>
+<!-- End NavBar-->
+
+
+
+<!-- Movies Carousel-->
+<div display="flex">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" style="margin-top: 70px;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-img">
+            <img id='cimg' src="images\avatar\1.png" class="main-img" data-bs-toggle="popover" data-trigger="hover" title="Captain America" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+            <img id='cimg' src="images\avatar\2.png" class="main-img" data-bs-toggle="popover" data-trigger="hover" title="Iron Man" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+            <img id='cimg' src="images\avatar\3.png" class="main-img" data-bs-toggle="popover" data-trigger="hover" title="Thor" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img id='cimg' src="images\avatar\4.png" class="main-img" data-bs-toggle="popover" data-trigger="hover" title="Spider-man" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+        <img id='cimg' src="images\avatar\5.png" class="main-img" data-bs-toggle="popover" data-trigger="hover" title="Venom" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+        <img id='cimg' src="images\avatar\6.png" class="main-img" data-bs-toggle="popover" data-trigger="hover" title="Wolverine" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+      </div>
+      <div class="carousel-item">
+        <img id='cimg' src="images\avatar\7.png"class="main-img" data-bs-toggle="popover" data-trigger="hover" title="Black Widow" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+        <img id='cimg' src="images\avatar\8.png"class="main-img" data-bs-toggle="popover" data-trigger="hover" title="Black Panther" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+        <img id='cimg' src="images\avatar\9.png"class="main-img" data-bs-toggle="popover" data-trigger="hover" title="Deadpool" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+      </div>
+      <div class="carousel-item">
+        <img id='cimg' src="images\avatar\10.png"class="main-img" data-bs-toggle="popover" data-trigger="hover" title="War Machine" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+        <img id='cimg' src="images\avatar\11.png"class="main-img" data-bs-toggle="popover" data-trigger="hover" title="Dr-Strange" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+        <img id='cimg' src="images\avatar\12.png"class="main-img" data-bs-toggle="popover" data-trigger="hover" title="Hulk" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- End Movies Carousel-->
+
+<br><br>
+<!-- Welcome Section-->
+<div class="container text-center">
+    <div class="row">
+        <div class="greet">
+            <h2>Welcome</h2>
+            <pre style="font-family: roboto; font-size:large;">Marvel Entertainment, LLC, a wholly-owned subsidiary of The Walt Disney Company, is one of the world's most prominent character-based entertainment 
+                companies, built on a proven library of more than 8,000 characters featured in a variety of media over seventy-five years. 
+                Marvel utilizes its character franchises in entertainment, licensing and publishing. For more information visit marvel.com. © 2020 MARVEL</pre>
+        </div>
+    </div>
+</div>
+
+<!-- End Welcome Section-->
+<br><br>
+
+<!-- badge series-->
+<h1 id="label1"><span class="badge bg-danger">Series</span></h1>
+<!-- End badge series-->
+
+<br>
+<!-- Series Carousel-->
+<div id="ci" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#ci" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#ci" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#ci" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-img">
+            <img id='cimg1' src="/images/series/1.webp" class="main-img1">
+            <img id='cimg1' src="/images/series/2.jpg"class="main-img1">
+            <img id='cimg1' src="/images/series/3.webp"class="main-img1">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img id='cimg1' src="/images/series/4.jpeg"class="main-img1">
+        <img id='cimg1' src="/images/series/5.jpg"class="main-img1">
+        <img id='cimg1' src="/images/series/6.webp"class="main-img1">
+      </div>
+      <div class="carousel-item">
+        <img id='cimg1' src="/images/series/7.jpg" class="main-img1">
+        <img id='cimg1' src="/images/series/8.jfif"class="main-img1">
+        <img id='cimg1' src="/images/series/9.jpg"class="main-img1">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#ci" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#ci" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- End Series Carousel-->
+
+<br>
+<br>
+
+<!-- badge charecters-->
+<h1 id="label2"><span class="badge bg-danger">Charecters</span></h1>
+<!-- End badge charecters-->
+<br>
+
+<!-- Charecters Cards-->
+
+<div class="card-group mx-6" >
+  <div class="card1">
+    <img id='craimg' src="/images/Charecters/1.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title" ><b>Groot</b></h3>
+      <p class="card-text">This tree-like being branched out of his comfort zone to help the Guardians of the Galaxy keep the people of the universe safe.</p>
+    </div>
+  </div>
+  <div class="card1">
+    <img id='craimg' src="/images/Charecters/2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title"><b>Ms Marvel</b></h3>
+      <p class="card-text">Pakistani-American Super Hero Kamala Khan protects the streets of Jersey City with her one-of-a-kind embiggening power.</p>
+    </div>
+  </div>
+  <div class="card1">
+    <img id='craimg' src="/images/Charecters/3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title"><b>She Hulk</b></h3>
+      <p class="card-text">After getting a blood transfusion from her cousin Bruce Banner, Jennifer Walters gained all the powers of the Hulk – and all the problems. But while she gained massive strength, she never lost her passion for justice.</p>
+    </div>
+  </div>
+  <div class="card1">
+    <img id='craimg' src="/images/Charecters/4.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title"><b>Thor</b></h3>
+      <p class="card-text">Thor Odinson wields the power of the ancient Asgardians to fight evil throughout the Nine Realms and beyond.</p>
+    </div>
+  </div>
+</div>
+
+<!-- End Charecters Cards-->
+
+<br>
+<br>
+
+
+<!-- badge movies-->
+<h1 id="label3"><span class="badge bg-danger">Movies</span></h1>
+<!-- End badge movies-->
+
+
+<!-- Movies Carousel-->
+<div display="flex">
+  <div id="movies" class="carousel slide" data-bs-ride="true" style="margin-top: 70px;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#movies" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#movies" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#movies" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#movies" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="carousel-img">
+          <img id='cimg3' src="images\movies\1.webp" class="main-img3" >
+          <img id='cimg3' src="images\movies\2.jfif" class="main-img3" >
+          <img id='cimg3' src="images\movies\3.jfif" class="main-img3" >
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img id='cimg3' src="images\movies\4.jfif" class="main-img3" >
+      <img id='cimg3' src="images\movies\5.jfif" class="main-img3">
+      <img id='cimg3' src="images\movies\6.jfif" class="main-img3">
+    </div>
+    <div class="carousel-item">
+      <img id='cimg3' src="images\movies\7.jfif"class="main-img3">
+      <img id='cimg3' src="images\movies\8.webp"class="main-img3">
+      <img id='cimg3' src="images\movies\9.jpg"class="main-img3">
+    </div>
+    <div class="carousel-item">
+      <img id='cimg3' src="images\movies\10.webp"class="main-img3">
+      <img id='cimg3' src="images\movies\11.jpeg"class="main-img3">
+      <img id='cimg3' src="images\movies\12.jpg"class="main-img3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#movies" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#movies" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<br><br>
+<!-- End Movies Carousel-->
+<h1 id="label4"><span class="badge bg-danger">Comics</span></h1>
+<!-- End badge charecters-->
+<br>
+<div display="flex">
+    <div id="comics" class="carousel slide" data-bs-ride="true" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#comics" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#comics" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#comics" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-img">
+            <img id='cimg2' src="images\comics\1.jpeg" class="main-img2" >
+            <img id='cimg2' src="images\comics\2.jpeg" class="main-img2" >
+            <img id='cimg2' src="images\comics\3.png" class="main-img2" >
+            <img id='cimg2' src="images\comics\4.jpg" class="main-img2" >
+        </div>
+      </div>
+      <div class="carousel-item"> 
+        <img id='cimg2' src="images\comics\5.jpg" class="main-img2">
+        <img id='cimg2' src="images\comics\6.jpeg" class="main-img2">
+        <img id='cimg2' src="images\comics\7.jpg"class="main-img2">
+        <img id='cimg2' src="images\comics\8.jfif"class="main-img2">
+      </div>
+      <div class="carousel-item">
+        <img id='cimg2' src="images\comics\9.jpg"class="main-img2">
+        <img id='cimg2' src="images\comics\10.jpg"class="main-img2">
+        <img id='cimg2' src="images\comics\11.jpg"class="main-img2">
+        <img id='cimg2' src="images\comics\12.webp"class="main-img2">
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#comics" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#comics" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+ <br><br>
+
+<!-- badge products-->
+<h1 id="label5"><span class="badge bg-danger">Products</span></h1>
+<!-- End badge products-->
+
+<br>
+
+<!-- Products Cards-->
+
+<div id='products' class="row row-cols-1 row-cols-sm-6 g-4">
+  <div class="col">
+    <div class="card2">
+      <img src="/images/products/1.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Doctor Strange Action Figure – Doctor Strange in the Multiverse of Madness</h5>
+        <a href="#" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card2">
+      <img src="/images/products/2.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Loki Special Collector Edition Action Figure Set – Marvel Select by Diamond</h5>
+        <a href="#" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card2">
+      <img src="/images/products/3.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Moon Knight Action Figure – Marvel Select by Diamond – 7 - Marvel Toybox''</h5>
+        <a href="#" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card2">
+      <img src="/images/products/4.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Captain Carter and The Hydra Stomper Action Figure Set – Marvel Toybox</h5>
+        <a href="#" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card2">
+      <img src="/images/products/5.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Guardians of the Galaxy Action Figure Set - Marvel Diamond – Marvel Toybox</h5>
+        <a href="#" class="btn btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card2">
+       <img src="/images/products/6.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Spider-Man Black Suit Spider-Man: No Way Home Collector Edition Action Figure</h5>
+
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- End Products Cards-->
+
+<br>
+<br>
+
+
+
+<!--footer section-->
+<div class="footer">
+
+  <footer class="bg-danger text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="   bg-dark shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 200px; height: 70px;">
+            <img src="/images/footer/Clonathon_enhance.jpg" height="70" alt=""
+                 loading="lazy" />
+          </div>
+
+          <p class="text-center">An event organised by AISA community for fun</p>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Support</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>FAQs</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Quiz</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Complaints</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Helpline</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Quick  Links</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>General information</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>About the Marvel Universe</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Marvel Store</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+          <div class="icons">
+            <a href="#"><img src="https://img.icons8.com/color/48/000000/youtube-play.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+          </div>
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" value='email@gmail.com' class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2022 Copyright:
+      <a class="text-white" href="#">Marvel.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</div>
+<!-- End of .container -->
+
+<!-- End of footer section-->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
